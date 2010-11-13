@@ -190,9 +190,10 @@ class LippyOutput:
             self.lvl_str = 'WARNING'
             
     def output(self):
-    
+
+        #Output header with correct colours for platform
         colour.output(self.lvl, self.lvl_str, self.address)
-            
+           
         print("%s\n" % self.msg)
         
         if self.logged_data is not None:
